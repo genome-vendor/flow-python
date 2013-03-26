@@ -10,9 +10,10 @@
 #export DH_VERBOSE=1
 
 PREFIX=/opt/flow-python2.7
+LDFLAGS=
 
 %:
 	dh  $@
 
 override_dh_auto_configure:
-	./configure --prefix=$(PREFIX) --with-system-ffi --enable-unicode=ucs4 --with-system-expat
+	LDFLAGS=$(LDFLAGS) ./configure --prefix=$(PREFIX) --with-system-ffi --enable-unicode=ucs4 --with-system-expat
