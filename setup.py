@@ -6,7 +6,10 @@ __version__ = "$Revision$"
 import sys, os, imp, re, optparse
 from glob import glob
 from platform import machine as platform_machine
-import sysconfig
+try:
+    import sysconfig
+except ImportError:
+    from distutils import sysconfig
 
 from distutils import log
 from distutils import text_file
