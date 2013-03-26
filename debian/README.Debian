@@ -1,0 +1,7 @@
+flow-python for Debian
+----------------------
+
+This is a vanilla python compilation for use with flow.  It was created
+to exist side-by-side with with the existing Natty python2.7.1 installation.
+
+ -- Mark Burnett <mburnett@genome.wustl.edu>  Mon, 25 Mar 2013 13:31:16 -0500

@@ -1,0 +1,5 @@
+flow-python2.7 (2.7.3-1) unstable; urgency=low
+
+  * Python release for flow use at TGI
+
+ -- Mark Burnett <mburnett@genome.wustl.edu>  Mon, 25 Mar 2013 13:31:16 -0500

@@ -1,0 +1,27 @@
+Source: flow-python2.7
+Section: python
+Priority: extra
+Maintainer: Mark Burnett <mburnett@genome.wustl.edu>
+Build-Depends: debhelper (>= 7), autotools-dev,
+  autoconf, lsb-release, sharutils,
+  libreadline-dev, libncursesw5-dev (>= 5.3),
+  tk8.5-dev, blt-dev (>= 2.4z), libssl-dev,
+  zlib1g-dev, libbz2-dev,
+  libexpat1-dev,
+  locales [!armel !avr32 !hppa !ia64 !mipsel],
+  libsqlite3-dev, libffi-dev (>= 3.0.5),
+  libgpm2 [linux-any],
+  mime-support, netbase, bzip2,
+  libdb-dev, libgdbm-dev, gdb, python, help2man,
+  xvfb, xauth
+Standards-Version: 3.8.3
+Homepage: http://python.org
+
+Package: flow-python2.7
+Architecture: amd64
+Depends: ${shlibs:Depends}, ${misc:Depends}, libreadline, libcursesw5, tk8.5,
+ libssl, zlib1g, libbz2, libxpat1, libsqlite3-0, libffi, libgpm2, libdb,
+ libgdbm, gdb
+Description: python binaries for the flow project
+ This exists because we need python2.7 to be a lucid package so we can depend
+ on it.
