@@ -19,9 +19,9 @@ Homepage: http://python.org
 
 Package: flow-python2.7
 Architecture: amd64
-Depends: ${shlibs:Depends}, ${misc:Depends}, libreadline, libcursesw5, tk8.5,
- libssl, zlib1g, libbz2, libxpat1, libsqlite3-0, libffi, libgpm2, libdb,
- libgdbm, gdb
+Depends: ${shlibs:Depends}, ${misc:Depends}, libreadline5, libncursesw5, tk8.5,
+ libssl0.9.8, zlib1g, libbz2-1.0, libexpat1, libsqlite3-0, libffi5, libgpm2, libdb4.8,
+ libgdbm3, gdb
 Description: python binaries for the flow project
  This exists because we need python2.7 to be a lucid package so we can depend
  on it.
